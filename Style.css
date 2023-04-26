@@ -1,0 +1,226 @@
+:root {
+  --black: #000000;
+  --gray: #444546;
+  --gray-title: rgba(0, 0, 0, 0.4);
+  --yellow: #ebeb33;
+  --yellow-logo: #f2e52d;
+  --yellow-letters: #f3e738;
+  --white: #ffffff;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  background-color: var(--white);
+}
+img {
+  display: block;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  max-width: 1158px;
+  padding: 0;
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.link {
+  text-decoration: none;
+}
+.header-style {
+  background: var(--white);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  padding: 0 80px;
+}
+.header-logo {
+  width: 88px;
+  height: 58px;
+  fill: var(--black);
+  margin-right: 235px;
+}
+.header-logo:hover {
+  fill: var(--yellow-logo);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 40px;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 48px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-items:hover,
+.menu-items:focus {
+  color: var(--yellow-letters);
+}
+.btn {
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 33px;
+  width: 196px;
+  height: 50px;
+  color: var(--gray);
+  border: 2px solid #444546;
+  border-radius: 30px;
+  transition-property: opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(0deg, #ebeb33, #ebeb33),
+    linear-gradient(0deg, #444546, #444546);
+  opacity: 0.75;
+}
+.btn:hover,
+.btn:focus {
+  opacity: 1;
+}
+.hero {
+  display: flex;
+  width: 100%;
+  background-image: url(./images/manta1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.title {
+  min-height: 856px;
+}
+.title-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+  padding-left: 100px;
+  gap: 440px;
+  height: 180px;
+  font-weight: 600;
+  font-size: 170px;
+  line-height: 180px;
+  color: var(--gray-title);
+}
+.section-title {
+  display: block;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin: 60px auto;
+  width: 533px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+}
+.section-title::before {
+  display: flex;
+  position: absolute;
+  content: "";
+  width: 305px;
+  border: 2px solid #ebeb33;
+  top: 50%;
+  left: 605px;
+}
+.section-title::after {
+  display: flex;
+  position: absolute;
+  content: "";
+  width: 305px;
+  border: 2px solid #ebeb33;
+  top: 50%;
+  right: 605px;
+}
+
+.new-manta {
+  display: flex;
+  width: 100%;
+  min-height: 831px;
+  padding: 0;
+  margin: 0;
+  background-image: url(./images/manta2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-manta-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow-letters);
+}
+.logo {
+  width: 88px;
+  height: 58px;
+}
+.yellow-logo {
+  fill: var(--yellow-logo);
+  margin-right: 560px;
+}
+.new-manta-title {
+    text-align: center;
+    width: 530px;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+.new-manta-text {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+}
+.new-manta-right {
+    width: 630px;
+}
